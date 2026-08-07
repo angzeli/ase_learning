@@ -16,3 +16,5 @@ __pycache__/
 .vscode/
 .DS_Store
 
+# Large files
+*.gpw
