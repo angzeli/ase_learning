@@ -1,0 +1,948 @@
+  __  _  _
+ | _ |_)|_||  |
+ |__||  | ||/\| - 26.7.0
+
+User:   liangze@Angzes-MacBook-Pro.local
+Date:   Fri Aug  7 14:17:09 2026
+Arch:   arm64
+Pid:    35927
+CWD:    /Users/liangze/Desktop/Experiences/ase_learning/official_tutorials
+units:  Angstrom and eV
+cores:  1
+OpenMP: False
+
+Versions:
+  Python: 3.14.6
+  ASE:    3.29.0
+  Numpy:  2.5.1
+  Scipy:  1.18.0
+  Libxc:  2.x.y
+
+Paths:
+  gpaw:  /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw
+  _gpaw: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/
+        _gpaw.cpython-314-darwin.so
+  ase:   /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/ase
+  numpy: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/numpy
+  scipy: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/scipy
+
+Git-hashes:
+
+OMP_NUM_THREADS: 
+
+
+Environment variables:
+  GPAW_CPUPY:          False
+  GPAW_DEBUG:          False
+  GPAW_MPI_BACKEND:    serial
+  GPAW_MPI_OPTIONS:    None
+  GPAW_NO_C_EXTENSION: False
+  GPAW_NO_GPU_MPI:     False
+  GPAW_TRACE:          False
+  GPAW_USE_GPUS:       False
+
+Input parameters:
+  mode=LCAO(),
+  basis={'default': 'dzp'}
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |              |  
+ |   |    H         |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.000000 | 3.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 4.000000 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.000000 | 5.000000 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Number of symmetries: 4
+Symmetry operations  # r_c * U_cc + t_c -> r_c
+|   | kind |            matrix            |
+|---|------|------------------------------|
+| 0 |  E   |  1, 0, 0,  0, 1, 0,  0, 0, 1 |
+| 1 |  σ   |  1, 0, 0,  0, 1, 0,  0, 0,-1 |
+| 2 |  σ   | -1, 0, 0,  0, 1, 0,  0, 0, 1 |
+| 3 |  C2  | -1, 0, 0,  0, 1, 0,  0, 0,-1 |
+
+BZ-sampling:
+  Number of BZ points: 1
+  Number of IBZ points: 1
+
+  Monkhorst-Pack size: [1, 1, 1]
+  Monkhorst-Pack shift: [0, 0, 0]
+
+K-points  # in reciprocal-cell coordinates
+|   |                                coordinates |     weight |
+|---|--------------------------------------------|------------|
+| 0 | (  0.00000000,   0.00000000,   0.00000000) | 1.00000000 |
+
+basis functions: 23
+Spin-components: 1 (collinear spins)
+Bands:           6
+Projectors:      11
+Spin-degeneracy: 2
+Datatype:        <class 'float'>
+
+Memory:
+  Storage: CPU
+  Wave functions: 1_104 bytes (1_104 per core)
+
+Parallelization:
+  kpt:    1
+  domain: 1
+  band:   1
+
+Density:
+  Valence electrons: 8.0
+  Components: 1
+  Grid points: [28 36 40]
+  Charge: 0.0  # |e|
+
+Potential:
+  Grid points: [28 36 40]
+
+species:
+  H:
+    name:    Hydrogen
+    id:      4766778ce56282eaa64abeb28b7c1de3
+    Z:       1.0
+    valence: 1
+    core:    0
+    charge:  0.0  # [|e|]
+    file:    /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/H.LDA.gz
+    compensation charges:
+      type: gauss
+      rc: 0.15  # [Å]
+      lmax: 2
+    cutoffs:
+      filter: 0.85  # [Å]
+      core: 0.53  # [Å]
+    projectors
+    | kind |    occ | energy [eV] | rcut [Å] |
+    |------|--------|-------------|----------|
+    |   1s |  1.000 |      -6.353 |    0.476 |
+    |    s |        |      20.858 |    0.476 |
+    |    p |        |       0.000 |    0.476 |
+  
+    LCAO basis set for H:
+      Name: dzp
+      File: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/H.dzp.basis.gz
+      Number of radial functions: 3
+      Number of spherical harmonics: 5
+        l=0, rc=6.4219 Bohr: 1s-sz confined orbital
+        l=0, rc=3.6094 Bohr: 1s-dz split-valence wave
+        l=1, rc=6.4219 Bohr: p-type Gaussian polarization
+      Number of RI-basis functions 0
+
+  O:
+    name:    Oxygen
+    id:      9b9d51c344dea68c822856295a461509
+    Z:       8.0
+    valence: 6
+    core:    2
+    charge:  0.0  # [|e|]
+    file:    /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/O.LDA.gz
+    compensation charges:
+      type: gauss
+      rc: 0.21  # [Å]
+      lmax: 2
+    cutoffs:
+      filter: 1.17  # [Å]
+      core: 0.83  # [Å]
+    projectors
+    | kind |    occ | energy [eV] | rcut [Å] |
+    |------|--------|-------------|----------|
+    |   2s |  2.000 |     -23.752 |    0.688 |
+    |   2p |  4.000 |      -9.195 |    0.598 |
+    |    s |        |       3.459 |    0.688 |
+    |    p |        |      18.016 |    0.598 |
+    |    d |        |       0.000 |    0.619 |
+  
+    LCAO basis set for O:
+      Name: dzp
+      File: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/O.dzp.basis.gz
+      Number of radial functions: 5
+      Number of spherical harmonics: 13
+        l=0, rc=4.3438 Bohr: 2s-sz confined orbital
+        l=1, rc=5.3906 Bohr: 2p-sz confined orbital
+        l=0, rc=2.2969 Bohr: 2s-dz split-valence wave
+        l=1, rc=2.8906 Bohr: 2p-dz split-valence wave
+        l=2, rc=5.3906 Bohr: d-type Gaussian polarization
+      Number of RI-basis functions 0
+
+Reference energy: -2052.165985  # eV
+
+eigensolver:
+  <gpaw.new.lcao.eigensolver.LCAOEigensolver object at 0x1125dbe00>
+density mixing:
+  MSR1-Mixer
+  Pratt-step length: 0.05
+  Maximum mixing coefficient: 0.75
+  Old densities: 10
+  SVD Regularization: 0.005
+  Good broyden scale: 1.0
+  Trust region scale: 1.0
+  Backstep threshold: 4.0
+  History deletion threshold: 6.0
+  Fourier metric: weight=20.0, sigma=0.015
+  
+occupation numbers:
+  # Zero width
+
+FastPoissonSolver using
+    Stencil: 6*3+1=19 point O(h^6) finite-difference Laplacian
+    FFT axes: []
+    FST axes: [np.int64(0), np.int64(1), np.int64(2)]
+
+xc functional:
+  name: None
+interpolation: tri-quintic # 5. degree polynomial
+
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |              |  
+ |   |    H         |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.000000 | 3.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 4.000000 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.000000 | 5.000000 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Number of symmetries: 4
+Symmetry operations  # r_c * U_cc + t_c -> r_c
+|   | kind |            matrix            |
+|---|------|------------------------------|
+| 0 |  E   |  1, 0, 0,  0, 1, 0,  0, 0, 1 |
+| 1 |  σ   |  1, 0, 0,  0, 1, 0,  0, 0,-1 |
+| 2 |  σ   | -1, 0, 0,  0, 1, 0,  0, 0, 1 |
+| 3 |  C2  | -1, 0, 0,  0, 1, 0,  0, 0,-1 |
+
+BZ-sampling:
+  Number of BZ points: 1
+  Number of IBZ points: 1
+
+  Monkhorst-Pack size: [1, 1, 1]
+  Monkhorst-Pack shift: [0, 0, 0]
+
+K-points  # in reciprocal-cell coordinates
+|   |                                coordinates |     weight |
+|---|--------------------------------------------|------------|
+| 0 | (  0.00000000,   0.00000000,   0.00000000) | 1.00000000 |
+
+basis functions: 23
+Spin-components: 1 (collinear spins)
+Bands:           6
+Projectors:      11
+Spin-degeneracy: 2
+Datatype:        <class 'float'>
+
+Memory:
+  Storage: CPU
+  Wave functions: 1_104 bytes (1_104 per core)
+
+Parallelization:
+  kpt:    1
+  domain: 1
+  band:   1
+
+Density:
+  Valence electrons: 8.0
+  Components: 1
+  Grid points: [28 36 40]
+  Charge: 0.0  # |e|
+
+Potential:
+  Grid points: [28 36 40]
+
+species:
+  H:
+    name:    Hydrogen
+    id:      4766778ce56282eaa64abeb28b7c1de3
+    Z:       1.0
+    valence: 1
+    core:    0
+    charge:  0.0  # [|e|]
+    file:    /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/H.LDA.gz
+    compensation charges:
+      type: gauss
+      rc: 0.15  # [Å]
+      lmax: 2
+    cutoffs:
+      filter: 0.85  # [Å]
+      core: 0.53  # [Å]
+    projectors
+    | kind |    occ | energy [eV] | rcut [Å] |
+    |------|--------|-------------|----------|
+    |   1s |  1.000 |      -6.353 |    0.476 |
+    |    s |        |      20.858 |    0.476 |
+    |    p |        |       0.000 |    0.476 |
+  
+    LCAO basis set for H:
+      Name: dzp
+      File: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/H.dzp.basis.gz
+      Number of radial functions: 3
+      Number of spherical harmonics: 5
+        l=0, rc=6.4219 Bohr: 1s-sz confined orbital
+        l=0, rc=3.6094 Bohr: 1s-dz split-valence wave
+        l=1, rc=6.4219 Bohr: p-type Gaussian polarization
+      Number of RI-basis functions 0
+
+  O:
+    name:    Oxygen
+    id:      9b9d51c344dea68c822856295a461509
+    Z:       8.0
+    valence: 6
+    core:    2
+    charge:  0.0  # [|e|]
+    file:    /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/O.LDA.gz
+    compensation charges:
+      type: gauss
+      rc: 0.21  # [Å]
+      lmax: 2
+    cutoffs:
+      filter: 1.17  # [Å]
+      core: 0.83  # [Å]
+    projectors
+    | kind |    occ | energy [eV] | rcut [Å] |
+    |------|--------|-------------|----------|
+    |   2s |  2.000 |     -23.752 |    0.688 |
+    |   2p |  4.000 |      -9.195 |    0.598 |
+    |    s |        |       3.459 |    0.688 |
+    |    p |        |      18.016 |    0.598 |
+    |    d |        |       0.000 |    0.619 |
+  
+    LCAO basis set for O:
+      Name: dzp
+      File: /Users/liangze/Desktop/Experiences/ase_learning/.venv/lib/python3.14/site-packages/gpaw_data/setups/O.dzp.basis.gz
+      Number of radial functions: 5
+      Number of spherical harmonics: 13
+        l=0, rc=4.3438 Bohr: 2s-sz confined orbital
+        l=1, rc=5.3906 Bohr: 2p-sz confined orbital
+        l=0, rc=2.2969 Bohr: 2s-dz split-valence wave
+        l=1, rc=2.8906 Bohr: 2p-dz split-valence wave
+        l=2, rc=5.3906 Bohr: d-type Gaussian polarization
+      Number of RI-basis functions 0
+
+Reference energy: -2052.165985  # eV
+
+eigensolver:
+  <gpaw.new.lcao.eigensolver.LCAOEigensolver object at 0x1126534d0>
+density mixing:
+  MSR1-Mixer
+  Pratt-step length: 0.05
+  Maximum mixing coefficient: 0.75
+  Old densities: 10
+  SVD Regularization: 0.005
+  Good broyden scale: 1.0
+  Trust region scale: 1.0
+  Backstep threshold: 4.0
+  History deletion threshold: 6.0
+  Fourier metric: weight=20.0, sigma=0.015
+  
+occupation numbers:
+  # Zero width
+
+FastPoissonSolver using
+    Stencil: 6*3+1=19 point O(h^6) finite-difference Laplacian
+    FFT axes: []
+    FST axes: [np.int64(0), np.int64(1), np.int64(2)]
+
+xc functional:
+  name: None
+interpolation: tri-quintic # 5. degree polynomial
+
+Initialization done in: 0.381 s
+
+convergence criteria:
+- Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+maximum number of iterations: 333
+
+SCF iterations
+|iter     |     time |      energy | eigst |  dens |
+|---------|----------|-------------|-------|-------|
+|iter:   1| 14:17:10 |  -10.963867 |[32m      [0mc|       |
+|iter:   2| 14:17:10 |  -10.736997 |[32m      [0mc| -0.74 |
+|iter:   3| 14:17:10 |  -10.120769 |[32m      [0mc| -0.79 |
+|iter:   4| 14:17:10 |  -10.057299 |[32m      [0mc| -1.20 |
+|iter:   5| 14:17:10 |  -10.043456 |[32m      [0mc| -1.65 |
+|iter:   6| 14:17:10 |  -10.043125 |[32m      [0mc| -2.41 |
+|iter:   7| 14:17:10 |[32m  -10.043108[0mc|[32m      [0mc| -3.09 |
+|iter:   8| 14:17:10 |[32m  -10.043108[0mc|[32m      [0mc| -3.69 |
+|iter:   9| 14:17:10 |[32m  -10.043108[0mc|[32m      [0mc|[32m -4.46[0mc|
+
+Converged in 9 steps
+SCF loop duration: 0.306 s (0.034 s/step)
+Energy contributions relative to reference atoms: (reference = -2052.165985)
+
+Energy contributions:
+  Kinetic:          -3.372007
+  Coulomb:          -0.391716
+  Zero:              0.394944
+  External:          0.000000
+  Xc:               -6.674329
+  Entropy:           0.000000
+  Spinorbit:         0.000000
+  ----------------------------
+  Free energy:     -10.043108
+  Extrapolated:[32m    -10.043108[0m
+
+dipole moment: (0.000000, -0.467526, 0.000000)  # |e|*Ang
+
+
+Fermi level: -4.314
+Eigenvalues  # (at kpt = [0.000, 0.000, 0.000])
+| band index |      eig [eV] | occ [0-2] |
+|------------|---------------|-----------|
+|          0 |       -21.792 |     2.000 |
+|          1 |        -9.378 |     2.000 |
+|          2 |        -8.848 |     2.000 |
+|          3 |        -6.048 |     2.000 |
+|          4 |        -2.581 |     0.000 |
+|          5 |        -1.532 |     0.000 |
+
+
+Gap: 3.467 eV
+Transition (v -> c):
+  (s=0, k=0, n=3, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=4, [0.00, 0.00, 0.00])
+No difference between direct/indirect transitions
+vacuum-level: 0.000  # V
+
+Forces  # eV/Ang
+|        x |        y |        z |
+|----------|----------|----------|
+|  0.00000 |  3.90172 |  3.84901 |  # H    0
+|  0.00000 | -7.76235 |  0.00000 |  # O    1
+| -0.00000 |  3.90172 | -3.84901 |  # H    2
+
+
+Force computation time: 0.017  # s
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |    H         |  
+ |   |              |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.055739 | 3.054986 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 3.889109 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.055739 | 4.945014 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Initialization done in: 0.071 s
+
+convergence criteria:
+- Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+maximum number of iterations: 333
+
+SCF iterations
+|iter     |     time |      energy | eigst |  dens |
+|---------|----------|-------------|-------|-------|
+|iter:   1| 14:17:10 |  -11.951598 |[32m      [0mc|       |
+|iter:   2| 14:17:10 |  -11.888340 |[32m      [0mc| -1.15 |
+|iter:   3| 14:17:10 |  -11.759416 |[32m      [0mc| -1.23 |
+|iter:   4| 14:17:10 |  -11.738178 |[32m      [0mc| -1.66 |
+|iter:   5| 14:17:10 |  -11.734195 |[32m      [0mc| -1.96 |
+|iter:   6| 14:17:10 |  -11.734146 |[32m      [0mc| -2.64 |
+|iter:   7| 14:17:11 |[32m  -11.734140[0mc|[32m      [0mc| -3.05 |
+|iter:   8| 14:17:11 |[32m  -11.734140[0mc|[32m      [0mc|[32m -4.01[0mc|
+
+Converged in 8 steps
+SCF loop duration: 0.267 s (0.033 s/step)
+Energy contributions relative to reference atoms: (reference = -2052.165985)
+
+Energy contributions:
+  Kinetic:          -0.282924
+  Coulomb:          -3.219307
+  Zero:              0.393396
+  External:          0.000000
+  Xc:               -8.625306
+  Entropy:           0.000000
+  Spinorbit:         0.000000
+  ----------------------------
+  Free energy:     -11.734140
+  Extrapolated:[32m    -11.734140[0m
+
+dipole moment: (0.000000, -0.435513, -0.000000)  # |e|*Ang
+
+
+Fermi level: -3.758
+Eigenvalues  # (at kpt = [0.000, 0.000, 0.000])
+| band index |      eig [eV] | occ [0-2] |
+|------------|---------------|-----------|
+|          0 |       -22.336 |     2.000 |
+|          1 |       -10.300 |     2.000 |
+|          2 |        -8.675 |     2.000 |
+|          3 |        -6.114 |     2.000 |
+|          4 |        -1.403 |     0.000 |
+|          5 |         0.048 |     0.000 |
+
+
+Gap: 4.711 eV
+Transition (v -> c):
+  (s=0, k=0, n=3, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=4, [0.00, 0.00, 0.00])
+No difference between direct/indirect transitions
+vacuum-level: 0.000  # V
+
+Forces  # eV/Ang
+|       x |        y |        z |
+|---------|----------|----------|
+| 0.00000 |  3.42769 |  4.13096 |  # H    0
+| 0.00000 | -6.82151 |  0.00000 |  # O    1
+| 0.00000 |  3.42769 | -4.13096 |  # H    2
+
+
+Force computation time: 0.019  # s
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |    H         |  
+ |   |              |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.156238 | 3.173946 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 3.689109 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.156238 | 4.826054 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Initialization done in: 0.074 s
+
+convergence criteria:
+- Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+maximum number of iterations: 333
+
+SCF iterations
+|iter     |     time |      energy | eigst |  dens |
+|---------|----------|-------------|-------|-------|
+|iter:   1| 14:17:11 |  -14.107450 |[32m      [0mc|       |
+|iter:   2| 14:17:11 |  -13.999591 |[32m      [0mc| -1.02 |
+|iter:   3| 14:17:11 |  -13.673765 |[32m      [0mc| -1.08 |
+|iter:   4| 14:17:11 |  -13.622965 |[32m      [0mc| -1.47 |
+|iter:   5| 14:17:11 |  -13.616991 |[32m      [0mc| -1.84 |
+|iter:   6| 14:17:11 |  -13.616866 |[32m      [0mc| -2.59 |
+|iter:   7| 14:17:11 |[32m  -13.616856[0mc|[32m      [0mc| -3.10 |
+|iter:   8| 14:17:11 |[32m  -13.616856[0mc|[32m      [0mc|[32m -4.01[0mc|
+
+Converged in 8 steps
+SCF loop duration: 0.258 s (0.032 s/step)
+Energy contributions relative to reference atoms: (reference = -2052.165985)
+
+Energy contributions:
+  Kinetic:          13.259777
+  Coulomb:         -13.511370
+  Zero:              0.404969
+  External:          0.000000
+  Xc:              -13.770233
+  Entropy:           0.000000
+  Spinorbit:         0.000000
+  ----------------------------
+  Free energy:     -13.616856
+  Extrapolated:[32m    -13.616856[0m
+
+dipole moment: (0.000000, -0.356113, 0.000000)  # |e|*Ang
+
+
+Fermi level: -2.695
+Eigenvalues  # (at kpt = [0.000, 0.000, 0.000])
+| band index |      eig [eV] | occ [0-2] |
+|------------|---------------|-----------|
+|          0 |       -24.200 |     2.000 |
+|          1 |       -12.956 |     2.000 |
+|          2 |        -8.110 |     2.000 |
+|          3 |        -6.450 |     2.000 |
+|          4 |         1.061 |     0.000 |
+|          5 |         3.304 |     0.000 |
+
+
+Gap: 7.511 eV
+Transition (v -> c):
+  (s=0, k=0, n=3, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=4, [0.00, 0.00, 0.00])
+No difference between direct/indirect transitions
+vacuum-level: 0.000  # V
+
+Forces  # eV/Ang
+|       x |        y |        z |
+|---------|----------|----------|
+| 0.00000 | -0.49984 |  0.56939 |  # H    0
+| 0.00000 |  1.00877 |  0.00000 |  # O    1
+| 0.00000 | -0.49984 | -0.56939 |  # H    2
+
+
+Force computation time: 0.017  # s
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |    H         |  
+ |   |              |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.147857 | 3.178327 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 3.705983 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.147857 | 4.821673 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Initialization done in: 0.068 s
+
+convergence criteria:
+- Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+maximum number of iterations: 333
+
+SCF iterations
+|iter     |     time |      energy | eigst |  dens |
+|---------|----------|-------------|-------|-------|
+|iter:   1| 14:17:11 |  -13.641151 |[32m      [0mc|       |
+|iter:   2| 14:17:11 |  -13.640936 |[32m      [0mc| -2.29 |
+|iter:   3| 14:17:11 |[32m  -13.640141[0mc|[32m      [0mc| -2.33 |
+|iter:   4| 14:17:11 |[32m  -13.640084[0mc|[32m      [0mc| -2.79 |
+|iter:   5| 14:17:11 |[32m  -13.640074[0mc|[32m      [0mc| -3.22 |
+|iter:   6| 14:17:11 |[32m  -13.640074[0mc|[32m      [0mc|[32m -4.31[0mc|
+
+Converged in 6 steps
+SCF loop duration: 0.188 s (0.031 s/step)
+Energy contributions relative to reference atoms: (reference = -2052.165985)
+
+Energy contributions:
+  Kinetic:          12.511904
+  Coulomb:         -13.028710
+  Zero:              0.408097
+  External:          0.000000
+  Xc:              -13.531365
+  Entropy:           0.000000
+  Spinorbit:         0.000000
+  ----------------------------
+  Free energy:     -13.640074
+  Extrapolated:[32m    -13.640074[0m
+
+dipole moment: (-0.000000, -0.366648, -0.000000)  # |e|*Ang
+
+
+Fermi level: -2.736
+Eigenvalues  # (at kpt = [0.000, 0.000, 0.000])
+| band index |      eig [eV] | occ [0-2] |
+|------------|---------------|-----------|
+|          0 |       -24.143 |     2.000 |
+|          1 |       -12.750 |     2.000 |
+|          2 |        -8.229 |     2.000 |
+|          3 |        -6.444 |     2.000 |
+|          4 |         0.971 |     0.000 |
+|          5 |         3.192 |     0.000 |
+
+
+Gap: 7.415 eV
+Transition (v -> c):
+  (s=0, k=0, n=3, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=4, [0.00, 0.00, 0.00])
+No difference between direct/indirect transitions
+vacuum-level: 0.000  # V
+
+Forces  # eV/Ang
+|       x |        y |        z |
+|---------|----------|----------|
+| 0.00000 | -0.14792 |  0.83059 |  # H    0
+| 0.00000 |  0.34127 |  0.00000 |  # O    1
+| 0.00000 | -0.14792 | -0.83059 |  # H    2
+
+
+Force computation time: 0.019  # s
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |    H         |  
+ |   |              |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.131261 | 3.215475 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 3.740800 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.131261 | 4.784525 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Initialization done in: 0.072 s
+
+convergence criteria:
+- Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+maximum number of iterations: 333
+
+SCF iterations
+|iter     |     time |      energy | eigst |  dens |
+|---------|----------|-------------|-------|-------|
+|iter:   1| 14:17:11 |  -13.688091 |[32m      [0mc|       |
+|iter:   2| 14:17:11 |  -13.687588 |[32m      [0mc| -1.94 |
+|iter:   3| 14:17:11 |[32m  -13.684566[0mc|[32m      [0mc| -1.97 |
+|iter:   4| 14:17:11 |[32m  -13.683953[0mc|[32m      [0mc| -2.33 |
+|iter:   5| 14:17:11 |[32m  -13.683942[0mc|[32m      [0mc| -3.18 |
+|iter:   6| 14:17:11 |[32m  -13.683941[0mc|[32m      [0mc| -3.67 |
+|iter:   7| 14:17:11 |[32m  -13.683941[0mc|[32m      [0mc|[32m -4.34[0mc|
+
+Converged in 7 steps
+SCF loop duration: 0.215 s (0.031 s/step)
+Energy contributions relative to reference atoms: (reference = -2052.165985)
+
+Energy contributions:
+  Kinetic:          12.884368
+  Coulomb:         -13.441576
+  Zero:              0.406906
+  External:          0.000000
+  Xc:              -13.533639
+  Entropy:           0.000000
+  Spinorbit:         0.000000
+  ----------------------------
+  Free energy:     -13.683941
+  Extrapolated:[32m    -13.683941[0m
+
+dipole moment: (-0.000000, -0.390328, 0.000000)  # |e|*Ang
+
+
+Fermi level: -2.765
+Eigenvalues  # (at kpt = [0.000, 0.000, 0.000])
+| band index |      eig [eV] | occ [0-2] |
+|------------|---------------|-----------|
+|          0 |       -24.285 |     2.000 |
+|          1 |       -12.441 |     2.000 |
+|          2 |        -8.602 |     2.000 |
+|          3 |        -6.495 |     2.000 |
+|          4 |         0.966 |     0.000 |
+|          5 |         3.164 |     0.000 |
+
+
+Gap: 7.460 eV
+Transition (v -> c):
+  (s=0, k=0, n=3, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=4, [0.00, 0.00, 0.00])
+No difference between direct/indirect transitions
+vacuum-level: 0.000  # V
+
+Forces  # eV/Ang
+|        x |        y |        z |
+|----------|----------|----------|
+| -0.00000 |  0.16853 |  0.40425 |  # H    0
+|  0.00000 | -0.41497 |  0.00000 |  # O    1
+| -0.00000 |  0.16853 | -0.40425 |  # H    2
+
+
+Force computation time: 0.018  # s
+     .--------------.  
+    /|              |  
+   / |              |  
+  /  |              |  
+ *   |              |  
+ |   |              |  
+ |   |    H         |  
+ |   |     O        |  
+ |   |    H         |  
+ |   |              |  
+ |   .--------------.  
+ |  /              /   
+ | /              /    
+ |/              /     
+ *--------------*      
+
+Atoms  # Å, Bohr magnetons
+|   | symbol |        x |        y |        z |    initial magnetic moments |
+|---|--------|----------|----------|----------|-----------------------------|
+| 0 |      H | 3.000000 | 3.130684 | 3.226916 | ( 0.0000,  0.0000,  0.0000) |
+| 1 |      O | 3.000000 | 3.740628 | 4.000000 | ( 0.0000,  0.0000,  0.0000) |
+| 2 |      H | 3.000000 | 3.130684 | 4.773084 | ( 0.0000,  0.0000,  0.0000) |
+
+
+Unit cell  # Å
+| periodic |        x |        y |        z |  lengths |    angles |
+|----------|----------|----------|----------|----------|-----------|
+|       no | 6.000000 | 0.000000 | 0.000000 | 6.000000 | 90.000000 |
+|       no | 0.000000 | 7.000000 | 0.000000 | 7.000000 | 90.000000 |
+|       no | 0.000000 | 0.000000 | 8.000000 | 8.000000 | 90.000000 |
+
+
+Initialization done in: 0.079 s
+
+convergence criteria:
+- Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
+- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron
+- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron
+maximum number of iterations: 333
+
+SCF iterations
+|iter     |     time |      energy | eigst |  dens |
+|---------|----------|-------------|-------|-------|
+|iter:   1| 14:17:12 |  -13.689300 |[32m      [0mc|       |
+|iter:   2| 14:17:12 |  -13.689195 |[32m      [0mc| -2.52 |
+|iter:   3| 14:17:12 |[32m  -13.688846[0mc|[32m      [0mc| -2.57 |
+|iter:   4| 14:17:12 |[32m  -13.688794[0mc|[32m      [0mc| -2.94 |
+|iter:   5| 14:17:12 |[32m  -13.688787[0mc|[32m      [0mc| -3.38 |
+|iter:   6| 14:17:12 |[32m  -13.688787[0mc|[32m      [0mc|[32m -4.14[0mc|
+
+Converged in 6 steps
+SCF loop duration: 0.187 s (0.031 s/step)
+Energy contributions relative to reference atoms: (reference = -2052.165985)
+
+Energy contributions:
+  Kinetic:          13.688822
+  Coulomb:         -14.042219
+  Zero:              0.405464
+  External:          0.000000
+  Xc:              -13.740854
+  Entropy:           0.000000
+  Spinorbit:         0.000000
+  ----------------------------
+  Free energy:     -13.688787
+  Extrapolated:[32m    -13.688787[0m
+
+dipole moment: (-0.000000, -0.391842, -0.000000)  # |e|*Ang
+
+
+Fermi level: -2.742
+Eigenvalues  # (at kpt = [0.000, 0.000, 0.000])
+| band index |      eig [eV] | occ [0-2] |
+|------------|---------------|-----------|
+|          0 |       -24.399 |     2.000 |
+|          1 |       -12.481 |     2.000 |
+|          2 |        -8.660 |     2.000 |
+|          3 |        -6.521 |     2.000 |
+|          4 |         1.038 |     0.000 |
+|          5 |         3.257 |     0.000 |
+
+
+Gap: 7.560 eV
+Transition (v -> c):
+  (s=0, k=0, n=3, [0.00, 0.00, 0.00]) -> (s=0, k=0, n=4, [0.00, 0.00, 0.00])
+No difference between direct/indirect transitions
+vacuum-level: 0.000  # V
+
+Forces  # eV/Ang
+|       x |        y |        z |
+|---------|----------|----------|
+| 0.00000 | -0.02598 |  0.02067 |  # H    0
+| 0.00000 | -0.03616 |  0.00000 |  # O    1
+| 0.00000 | -0.02598 | -0.02067 |  # H    2
+
+
+Force computation time: 0.017  # s
