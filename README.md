@@ -7,7 +7,7 @@ while learning ASE.
 
 ## Repository structure
 
-- `official_tutorials/` — notebooks and notes based on official ASE tutorials.
+- `official_tutorials_introductory/` and `official_tutorials_advanced/` — notebooks and notes based on official ASE tutorials.
 - `files/` — structures and other supporting data used by the exercises.
 - `toy_projects/` — planned home for future experiments and small projects.
 
