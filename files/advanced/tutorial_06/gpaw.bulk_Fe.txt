@@ -3,9 +3,9 @@
  |__||  | ||/\| - 26.7.0
 
 User:   liangze@Angzes-MacBook-Pro.local
-Date:   Sun Aug  9 13:55:16 2026
+Date:   Sun Aug  9 14:09:30 2026
 Arch:   arm64
-Pid:    46417
+Pid:    48665
 CWD:    /Users/liangze/Desktop/Experiences/ase_learning/official_tutorials_advanced
 units:  Angstrom and eV
 cores:  1
@@ -233,7 +233,7 @@ poisson solver:
 xc functional:
   name: None
 
-Initialization done in: 0.398 s
+Initialization done in: 0.421 s
 
 convergence criteria:
 - Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
@@ -244,20 +244,20 @@ maximum number of iterations: 333
 SCF iterations
 |iter     |     time |      energy | eigst |  dens |  magmom |
 |---------|----------|-------------|-------|-------|---------|
-|iter:   1| 13:55:16 |   -9.794471 | +0.53 |       |  +2.2034|
-|iter:   2| 13:55:17 |   -9.785633 | -1.53 | -1.03 |  +2.1981|
-|iter:   3| 13:55:17 |   -9.806116 | -1.35 | -1.07 |  +2.1538|
-|iter:   4| 13:55:17 |   -9.820490 | -2.63 | -1.35 |  +2.1563|
-|iter:   5| 13:55:17 |   -9.832370 | -2.62 | -1.59 |  +2.1499|
-|iter:   6| 13:55:17 |   -9.832674 | -3.85 | -2.33 |  +2.1527|
-|iter:   7| 13:55:18 |   -9.832733c| -4.45 | -2.68 |  +2.1576|
-|iter:   8| 13:55:18 |   -9.832733c| -5.99 | -3.56 |  +2.1588|
-|iter:   9| 13:55:18 |   -9.832732c| -6.46 | -3.87 |  +2.1599|
-|iter:  10| 13:55:18 |   -9.832732c| -7.28 | -4.79c|  +2.1599|
-|iter:  11| 13:55:18 |   -9.832732c| -7.60c| -5.14c|  +2.1599|
+|iter:   1| 14:09:31 |   -9.794471 | +0.53 |       |  +2.2034|
+|iter:   2| 14:09:31 |   -9.785633 | -1.53 | -1.03 |  +2.1981|
+|iter:   3| 14:09:31 |   -9.806116 | -1.35 | -1.07 |  +2.1538|
+|iter:   4| 14:09:32 |   -9.820490 | -2.63 | -1.35 |  +2.1563|
+|iter:   5| 14:09:32 |   -9.832370 | -2.62 | -1.59 |  +2.1499|
+|iter:   6| 14:09:32 |   -9.832674 | -3.85 | -2.33 |  +2.1527|
+|iter:   7| 14:09:32 |[32m   -9.832733[0mc| -4.45 | -2.68 |  +2.1576|
+|iter:   8| 14:09:32 |[32m   -9.832733[0mc| -5.99 | -3.56 |  +2.1588|
+|iter:   9| 14:09:33 |[32m   -9.832732[0mc| -6.46 | -3.87 |  +2.1599|
+|iter:  10| 14:09:33 |[32m   -9.832732[0mc| -7.28 |[32m -4.79[0mc|  +2.1599|
+|iter:  11| 14:09:33 |[32m   -9.832732[0mc|[32m -7.60[0mc|[32m -5.14[0mc|  +2.1599|
 
 Converged in 11 steps
-SCF loop duration: 2.264 s (0.206 s/step)
+SCF loop duration: 2.227 s (0.202 s/step)
 Energy contributions relative to reference atoms: (reference = -34557.939371)
 
 Energy contributions:
@@ -270,7 +270,7 @@ Energy contributions:
   Spinorbit:         0.000000
   ----------------------------
   Free energy:      -9.846841
-  Extrapolated:     -9.832732
+  Extrapolated:[32m     -9.832732[0m
 
 dipole moment: (-3.542180, -3.542180, -3.542180)  # |e|*Ang
 
@@ -300,12 +300,3 @@ Eigenvalues  # (at kpt = [0.062, 0.062, -0.062])
 
 No gap
 No difference between direct/indirect transitions
-# Writing to ../files/advanced/tutorial_06/bulk_Fe_groundstate.gpw (mode='')
-
-
-timing:  # [seconds]
-  Total: 13.970  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Init:   0.398  # ━╸
-  SCF:    2.264  # ━━━━━━━━━╸
-
-Max RSS: 244.094  # MiB

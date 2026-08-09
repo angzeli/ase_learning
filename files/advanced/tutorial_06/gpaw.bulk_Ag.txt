@@ -3,9 +3,9 @@
  |__||  | ||/\| - 26.7.0
 
 User:   liangze@Angzes-MacBook-Pro.local
-Date:   Sun Aug  9 13:55:10 2026
+Date:   Sun Aug  9 14:09:24 2026
 Arch:   arm64
-Pid:    46417
+Pid:    48665
 CWD:    /Users/liangze/Desktop/Experiences/ase_learning/official_tutorials_advanced
 units:  Angstrom and eV
 cores:  1
@@ -128,7 +128,7 @@ BZ-sampling:
   Number of BZ points: 512
   Number of IBZ points: 60
 
-  Your k-points are not as symmetric as your crystal!
+  Your k-points are [91mnot as symmetric[0m as your crystal!
 
   Monkhorst-Pack size: [8, 8, 8]
   Monkhorst-Pack shift: [0, 0, 0]
@@ -235,7 +235,7 @@ poisson solver:
 xc functional:
   name: None
 
-Initialization done in: 0.403 s
+Initialization done in: 0.398 s
 
 convergence criteria:
 - Maximum [total energy] change in last 3 cyles: 0.0005 eV / valence electron
@@ -246,16 +246,16 @@ maximum number of iterations: 333
 SCF iterations
 |iter     |     time |      energy | eigst |  dens |
 |---------|----------|-------------|-------|-------|
-|iter:   1| 13:55:11 |   -4.009267 | -0.17 |       |
-|iter:   2| 13:55:11 |   -3.927382 | -2.60 | -1.10 |
-|iter:   3| 13:55:11 |   -3.672371 | -1.64 | -1.16 |
-|iter:   4| 13:55:12 |   -3.668574 | -4.10 | -2.09 |
-|iter:   5| 13:55:12 |   -3.667292c| -4.28 | -2.35 |
-|iter:   6| 13:55:12 |   -3.667293c| -6.42 | -4.12c|
-|iter:   7| 13:55:12 |   -3.667293c| -7.52c| -4.29c|
+|iter:   1| 14:09:25 |   -4.009267 | -0.17 |       |
+|iter:   2| 14:09:25 |   -3.927382 | -2.60 | -1.10 |
+|iter:   3| 14:09:26 |   -3.672371 | -1.64 | -1.16 |
+|iter:   4| 14:09:26 |   -3.668574 | -4.10 | -2.09 |
+|iter:   5| 14:09:26 |[32m   -3.667292[0mc| -4.28 | -2.35 |
+|iter:   6| 14:09:26 |[32m   -3.667293[0mc| -6.42 |[32m -4.12[0mc|
+|iter:   7| 14:09:27 |[32m   -3.667293[0mc|[32m -7.52[0mc|[32m -4.29[0mc|
 
 Converged in 7 steps
-SCF loop duration: 2.129 s (0.304 s/step)
+SCF loop duration: 2.086 s (0.298 s/step)
 Energy contributions relative to reference atoms: (reference = -144464.532254)
 
 Energy contributions:
@@ -268,7 +268,7 @@ Energy contributions:
   Spinorbit:         0.000000
   ----------------------------
   Free energy:      -3.671995
-  Extrapolated:     -3.667293
+  Extrapolated:[32m     -3.667293[0m
 
 dipole moment: (-11.385952, -11.385952, -11.385952)  # |e|*Ang
 
@@ -292,3 +292,10 @@ No gap
 No difference between direct/indirect transitions
 # Writing to ../files/advanced/tutorial_06/bulk_Ag_groundstate.gpw (mode='')
 
+
+timing:  # [seconds]
+  Total: 3.835  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Init:  0.398  # ━━━━━━
+  SCF:   2.086  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Max RSS: 201.375  # MiB
