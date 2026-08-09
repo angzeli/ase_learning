@@ -1,0 +1,3 @@
+label,determinant,atom_count,cell_length_a_A,cell_length_b_A,cell_length_c_A,cell_angle_alpha_degrees,cell_angle_beta_degrees,cell_angle_gamma_degrees,shortest_periodic_translation_A
+P_1,32,32,8.16,8.16,8.16,90.0,90.0,90.0,8.16
+P_2,495,495,20.4,20.60299007425864,20.60299007425864,78.1188439789893,84.31756151648315,84.31756151648315,20.4
